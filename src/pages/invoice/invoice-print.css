@@ -1,0 +1,37 @@
+/* Printing the invoice page: only #invoice-printable is shown, fitted on a single A4 sheet. */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+  html,
+  body {
+    min-width: 0 !important;
+    background: #fff !important;
+  }
+  /* app chrome (Layout also marks these print:hidden) */
+  aside,
+  header {
+    display: none !important;
+  }
+  main {
+    min-height: 0 !important;
+    padding-top: 0 !important;
+    background: #fff !important;
+  }
+  .invoice-page {
+    padding: 0 !important;
+  }
+  #invoice-printable {
+    box-shadow: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

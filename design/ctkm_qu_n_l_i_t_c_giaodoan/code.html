@@ -1,0 +1,1011 @@
+<!DOCTYPE html><html lang="vi" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#a83900", "surface-container-high": "#dce9ff", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#ffb59a", "on-error-container": "#93000a", "surface-variant": "#d3e4fe", "secondary-fixed": "#dfe2ec", "on-tertiary": "#ffffff", "on-surface-variant": "#5b4137", "on-primary-fixed": "#380d00", "on-secondary-fixed": "#181c23", "inverse-primary": "#ffb59a", "on-primary-container": "#521800", "on-primary": "#ffffff", "tertiary-fixed-dim": "#4edea3", "on-secondary-container": "#61646d", "secondary": "#5b5e67", "surface-container-low": "#eff4ff", "background": "#f8f9ff", "tertiary-fixed": "#6ffbbe", "secondary-container": "#dfe2ec", "primary-fixed": "#ffdbce", "outline": "#907065", "on-secondary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-tertiary-fixed-variant": "#005236", "error": "#ba1a1a", "on-tertiary-container": "#003320", "primary": "#a83900", "on-tertiary-fixed": "#002113", "surface-bright": "#f8f9ff", "error-container": "#ffdad6", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "tertiary-container": "#00a773", "secondary-fixed-dim": "#c3c6d0", "on-secondary-fixed-variant": "#43474f", "tertiary": "#006c49", "primary-container": "#ff5b00", "on-background": "#0b1c30", "on-surface": "#0b1c30", "surface-dim": "#cbdbf5", "inverse-surface": "#213145", "outline-variant": "#e4beb1", "on-primary-fixed-variant": "#802a00", "on-error": "#ffffff", "surface-container": "#e5eeff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "0.875rem", "gutter": "1rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-lg": "1.25rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "label-lg": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "500" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-lg text-[15px] leading-relaxed text-on-surface antialiased" style="min-width: 2460px; width: 2460px; max-width: 2460px; min-height: 1300px; margin: 0px auto; overflow-x: auto;"><aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-margin flex items-center gap-space-md border-b border-inverse-surface/40"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-primary font-headline-md text-headline-md shadow-[0_4px_12px_rgba(255,91,0,0.35)]">G</div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-inverse-on-surface">Giaodoan</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Merchant CRM</span></div></div><div class="flex-1 overflow-y-auto py-space-md px-space-sm"><div class="px-space-md pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/70">Quản lý Merchant</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-lg shadow-[0_4px_12px_rgba(255,91,0,0.25)]"><a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="ho-so-merchant" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-lg text-[15px]">Hồ sơ Merchant</span></a>
+<a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="tien-do-onboard" href="#"><span class="material-symbols-outlined text-[22px]">timeline</span><span class="font-label-lg text-[15px]">Tiến độ onboard</span></a>
+<a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="yeu-cau-ho-tro" href="#"><span class="material-symbols-outlined text-[22px]">support_agent</span><span class="font-label-lg text-[15px]">Yêu cầu hỗ trợ</span></a>
+<a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="thoi-han-gia-han" href="#"><span class="material-symbols-outlined text-[22px]">history_edu</span><span class="font-label-lg text-[15px]">Thời hạn &amp; gia hạn</span></a>
+<a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="lich-su-lien-he" href="#"><span class="material-symbols-outlined text-[22px]">history</span><span class="font-label-lg text-[15px]">Lịch sử liên hệ</span></a>
+<a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="churn-risk" href="#"><span class="material-symbols-outlined text-[22px]">warning</span><span class="font-label-lg text-[15px]">Nguy cơ rời bỏ</span></a>
+<a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="faq" href="#"><span class="material-symbols-outlined text-[22px]">help_outline</span><span class="font-label-lg text-[15px]">FAQ</span></a>
+<a class="group flex items-center gap-space-md px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-semibold shadow-[0_4px_12px_rgba(255,91,0,0.35)] transition-all" data-path="ctkm" href="#"><span class="material-symbols-outlined text-[22px] text-on-primary">campaign</span><span class="font-label-lg text-[15px] text-on-primary font-semibold">CTKM</span></a></nav></div></div><div class="p-space-sm border-t border-inverse-surface/40"><nav class="flex flex-col gap-1"><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="cai-dat" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-[14px]">Cài đặt</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg text-secondary-fixed-dim hover:bg-surface-variant/10 hover:text-inverse-on-surface transition-all" data-path="tro-giup" href="#"><span class="material-symbols-outlined text-[20px]">live_help</span><span class="font-label-md text-[14px]">Trợ giúp</span></a></nav></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm text-secondary font-body-md text-[15px]"><span class="hover:text-primary transition-colors cursor-pointer">Tổng quan</span><span class="material-symbols-outlined text-[18px]">chevron_right</span><span class="text-on-surface font-label-lg text-[15px] font-semibold">CTKM - Quản Lý Đối Tác Giaodoan</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-[14px] font-semibold"><span class="material-symbols-outlined text-[18px] text-tertiary">schedule</span><span class="">GMT+7</span></div><div class="relative flex items-center"><button class="relative p-2 rounded-full hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" title="Thông báo hệ thống" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></button></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><span class="text-[18px]">🇻🇳</span><span class="font-label-md text-[14px] text-on-surface font-bold">VIE</span><span class="material-symbols-outlined text-[16px] text-secondary">expand_more</span></div><div class="h-6 w-[1px] bg-secondary-container"></div><div class="flex items-center gap-space-md"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-sm ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-lg text-[15px] text-on-surface font-bold leading-tight">Nguyễn Văn A</span><span class="font-label-md text-[13px] text-secondary leading-tight">Quản lý Đối tác</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Component -->
+<div class="fixed bottom-6 right-8 z-50 flex items-center gap-space-md bg-inverse-surface text-inverse-on-surface px-space-lg py-3 rounded-xl shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-4" id="live-toast">
+<span class="material-symbols-outlined text-tertiary-fixed text-[22px]">check_circle</span>
+<span class="font-label-md text-label-md text-white font-medium" id="toast-text">Đã cập nhật trạng thái chương trình thành công.</span>
+</div>
+<!-- Main Viewport Canvas (Widescreen CRM Container) -->
+<div class="w-full px-margin py-space-xl flex flex-col gap-space-xl max-w-[2400px]">
+<!-- PAGE HEADER & ACTION CONTROLS -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-7 bg-primary-container rounded-full"></div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight">
+            Quản Lý Chương Trình Khuyến Mãi (CTKM)
+          </h1>
+<span class="ml-2 px-3 py-1 bg-surface-container text-primary font-label-sm text-label-sm rounded-full font-bold uppercase tracking-wide">
+            Enterprise F&amp;B Hub
+          </span>
+</div>
+<p class="font-body-lg text-body-lg text-secondary pl-4">
+          Giám sát, phân bổ ngân sách tài trợ và theo dõi các chiến dịch ưu đãi kích cầu ẩm thực áp dụng cho các đối tác Merchant.
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex items-center flex-wrap gap-space-md">
+<button class="flex items-center gap-2 px-space-lg py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-all shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px] text-primary">download</span>
+<span class="">Xuất báo cáo Excel</span>
+</button>
+<button class="flex items-center gap-2 px-space-lg py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-all shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">tune</span>
+<span class="">Cấu hình chính sách voucher</span>
+</button>
+<button class="flex items-center gap-2 px-space-xl py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all active:scale-95" id="btn-create-modal" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span class="font-bold">+ Tạo CTKM mới</span>
+</button>
+</div>
+</div>
+<!-- KPI STATISTIC CARDS (4 Essential Executive Metrics) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Card 1: Số lượng CTKM Đang Chạy -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Số Lượng CTKM Đang Chạy</p>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-[38px] leading-none text-on-surface font-black tracking-tight">24</span>
+<span class="font-label-lg text-label-lg text-secondary">chiến dịch</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/50 flex items-center justify-center text-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[28px]">campaign</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            Đang hoạt động
+          </span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+            +4 CTKM mới tuần này
+          </span>
+</div>
+</div>
+<!-- Card 2: Số MC Sử Dụng CTKM -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Số MC Sử Dụng CTKM</p>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-[38px] leading-none text-on-surface font-black tracking-tight">842</span>
+<span class="font-label-lg text-label-lg text-secondary">Merchant</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[28px]">storefront</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">
+            Chiếm <span class="text-on-surface font-bold">85.2%</span> tổng đối tác
+          </span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[15px]">add</span>
+            +56 quán mới
+          </span>
+</div>
+</div>
+<!-- Card 3: Tổng Ngân Sách Tài Trợ Giaodoan -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Tổng Ngân Sách Tài Trợ Giaodoan</p>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-[36px] leading-none text-primary-container font-black tracking-tight">450.000.000</span>
+<span class="font-label-md text-label-md text-secondary font-bold">đ</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[28px]">payments</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-col gap-1.5 border-t border-surface-container-low">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-medium">Đã giải ngân: <strong class="text-on-surface">308.250.000 đ</strong></span>
+<span class="text-primary font-bold">68.5%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 68.5%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Doanh Thu Đơn Áp Dụng CTKM -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Doanh Thu Đơn Áp Dụng CTKM</p>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-[38px] leading-none text-on-surface font-black tracking-tight">3.82</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">Tỷ VNĐ</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/30 flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[28px]">insights</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold bg-tertiary-fixed/30 px-2.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+            +22.4% MoM
+          </span>
+<span class="font-label-sm text-label-sm text-secondary">
+            Chu kỳ: 30 ngày qua
+          </span>
+</div>
+</div>
+</div>
+<!-- FILTER BAR & QUERY SEARCH CONTROLS -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Top Row: Segmented Status Pills + Instant Search Input -->
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Status Tabs (Segmented Control) -->
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl gap-1">
+<button class="px-space-lg py-2 rounded-lg bg-surface-container-lowest text-primary-container font-label-lg text-label-lg font-bold shadow-sm transition-all flex items-center gap-2" type="button">
+<span class="">Tất cả</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">38</span>
+</button>
+<button class="px-space-lg py-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg font-semibold transition-all flex items-center gap-2" type="button">
+<span class="">Đang diễn ra</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">24</span>
+</button>
+<button class="px-space-lg py-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg font-semibold transition-all flex items-center gap-2" type="button">
+<span class="">Sắp diễn ra</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">6</span>
+</button>
+<button class="px-space-lg py-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg font-semibold transition-all flex items-center gap-2" type="button">
+<span class="">Đã kết thúc</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">8</span>
+</button>
+</div>
+<!-- Search Input with Keyboard Shortcut Indicator -->
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-secondary text-[22px]">search</span>
+<input class="w-full pl-12 pr-14 py-2.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-secondary font-body-lg text-body-lg outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/40 transition-all shadow-inner" placeholder="Tìm theo tên CTKM, mã chương trình, Merchant áp dụng..." type="text">
+<div class="absolute right-3.5 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-[11px] font-bold">
+            ⌘K
+          </div>
+</div>
+</div>
+<!-- Bottom Row: Filter Dropdowns & Quick Action Counters -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs border-t border-surface-container-low">
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Dropdown: Loại khuyến mãi -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface pl-3.5 pr-9 py-2 rounded-lg font-label-md text-label-md font-semibold cursor-pointer outline-none focus:ring-2 focus:ring-primary-container/30 transition-colors">
+<option value="">Loại khuyến mãi: Tất cả</option>
+<option value="discount">Giảm giá theo %</option>
+<option value="freeship">Miễn phí giao hàng (Freeship)</option>
+<option value="flashsale">Flash Sale giờ vàng</option>
+<option value="combo">Voucher Combo món</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Dropdown: Phân loại tài trợ -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface pl-3.5 pr-9 py-2 rounded-lg font-label-md text-label-md font-semibold cursor-pointer outline-none focus:ring-2 focus:ring-primary-container/30 transition-colors">
+<option value="">Nguồn tài trợ: Tất cả</option>
+<option value="giao-100">Giaodoan tài trợ 100%</option>
+<option value="co-sponsor">Đồng tài trợ 50 - 50</option>
+<option value="mc-self">Merchant tự tài trợ</option>
+<option value="custom">Giaodoan 70% - MC 30%</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Dropdown: Khu vực áp dụng -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface pl-3.5 pr-9 py-2 rounded-lg font-label-md text-label-md font-semibold cursor-pointer outline-none focus:ring-2 focus:ring-primary-container/30 transition-colors">
+<option value="">Khu vực: Toàn quốc</option>
+<option value="hcm">TP. Hồ Chí Minh</option>
+<option value="hni">Hà Nội</option>
+<option value="dng">Đà Nẵng</option>
+<option value="hp">Hải Phòng</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Reset Filter Button -->
+<button class="text-secondary hover:text-primary font-label-md text-label-md font-bold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span class="">Đặt lại bộ lọc</span>
+</button>
+</div>
+<!-- Quick Summary Count Indicator -->
+<div class="font-label-md text-label-md text-secondary">
+          Đang hiển thị <strong class="text-on-surface">6</strong> / 24 chiến dịch
+        </div>
+</div>
+</div>
+<!-- MAIN DATA TABLE CONTAINER -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<!-- Distinct Brand Header Row (#ff5b00) -->
+<thead>
+<tr class="bg-primary-container text-on-primary">
+<th class="py-4 px-4 w-12 text-center" scope="col">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 focus:ring-offset-0 cursor-pointer accent-on-primary" id="check-all" type="checkbox">
+</th>
+<th class="py-4 px-4 font-label-md text-[13px] uppercase tracking-wider font-bold" scope="col">MÃ CTKM</th>
+<th class="py-4 px-6 font-label-md text-[13px] uppercase tracking-wider font-bold" scope="col">TÊN CHƯƠNG TRÌNH KHUYẾN MÃI</th>
+<th class="py-4 px-4 font-label-md text-[13px] uppercase tracking-wider font-bold" scope="col">HÌNH THỨC &amp; MỨC GIẢM</th>
+<th class="py-4 px-4 font-label-md text-[13px] uppercase tracking-wider font-bold" scope="col">NGUỒN TÀI TRỢ</th>
+<th class="py-4 px-4 font-label-md text-[13px] uppercase tracking-wider font-bold" scope="col">SỐ MERCHANT THAM GIA</th>
+<th class="py-4 px-4 font-label-md text-[13px] uppercase tracking-wider font-bold" scope="col">THỜI GIAN ÁP DỤNG</th>
+<th class="py-4 px-4 font-label-md text-[13px] uppercase tracking-wider font-bold text-center" scope="col">TRẠNG THÁI</th>
+<th class="py-4 px-6 font-label-md text-[13px] uppercase tracking-wider font-bold text-center" scope="col">HÀNH ĐỘNG</th>
+</tr>
+</thead>
+<!-- Table Body with Hover Feedback and Clear Visual Statuses -->
+<tbody class="divide-y divide-surface-container-low font-body-lg text-body-lg text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container cursor-pointer accent-primary-container" type="checkbox">
+</td>
+<td class="py-4 px-4 font-mono font-bold text-primary-container text-[14px]">
+<span class="px-2 py-1 bg-surface-container rounded-md">#KM-FNB-2025</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-lg text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Đại Tiệc Món Ngon - Giảm 30% Tối Đa 50K
+                  </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                    Áp dụng toàn bộ menu đồ ăn chính, tối thiểu 2 món
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">percent</span>
+                  Giảm 30% (Max 50K)
+                </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Giaodoan 100%
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high flex items-center justify-center font-bold text-[11px] text-primary">W</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-primary-fixed flex items-center justify-center font-bold text-[11px] text-on-primary-fixed">Q</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-tertiary-fixed flex items-center justify-center font-bold text-[11px] text-on-tertiary-fixed">A</div>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">315</span>
+<span class="font-body-sm text-body-sm text-secondary">MC</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">01/11/2025 - 30/11/2025</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timelapse</span> Còn 12 ngày
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đang chạy
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Xem chi tiết">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary transition-colors" title="Danh sách Merchant tham gia">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</button>
+<!-- Active Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer ml-1">
+<input checked="" class="sr-only peer toggle-status" data-campaign="KM-FNB-2025" type="checkbox">
+<div class="w-11 h-6 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container cursor-pointer accent-primary-container" type="checkbox">
+</td>
+<td class="py-4 px-4 font-mono font-bold text-primary-container text-[14px]">
+<span class="px-2 py-1 bg-surface-container rounded-md">#KM-FREESHIP-04</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-lg text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Miễn Phí Giao Hàng Toàn Thành Phố Đơn Từ 80K
+                  </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                    Hỗ trợ chi phí vận chuyển trong bán kính 5km
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-variant text-on-surface font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+                  Freeship 15K
+                </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đồng tài trợ 50:50
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-primary-fixed flex items-center justify-center font-bold text-[11px] text-on-primary-fixed">P</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high flex items-center justify-center font-bold text-[11px] text-primary">C</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-tertiary-fixed flex items-center justify-center font-bold text-[11px] text-on-tertiary-fixed">B</div>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">420</span>
+<span class="font-body-sm text-body-sm text-secondary">MC</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">15/10/2025 - 15/12/2025</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timelapse</span> Còn 27 ngày
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đang chạy
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Xem chi tiết">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary transition-colors" title="Danh sách Merchant tham gia">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer ml-1">
+<input checked="" class="sr-only peer toggle-status" data-campaign="KM-FREESHIP-04" type="checkbox">
+<div class="w-11 h-6 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container cursor-pointer accent-primary-container" type="checkbox">
+</td>
+<td class="py-4 px-4 font-mono font-bold text-primary-container text-[14px]">
+<span class="px-2 py-1 bg-surface-container rounded-md">#KM-COMBO-LUNCH</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-lg text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Combo Trưa Văn Phòng Đồng Giá 39K
+                  </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                    Khung giờ 11:00 - 13:30 các ngày trong tuần (T2 - T6)
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">lunch_dining</span>
+                  Combo 39K
+                </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Giaodoan 70% - MC 30%
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-variant flex items-center justify-center font-bold text-[11px] text-primary">V</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high flex items-center justify-center font-bold text-[11px] text-on-surface">C</div>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">185</span>
+<span class="font-body-sm text-body-sm text-secondary">MC</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">01/10/2025 - 30/11/2025</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timelapse</span> Còn 12 ngày
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đang chạy
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Xem chi tiết">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary transition-colors" title="Danh sách Merchant tham gia">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer ml-1">
+<input checked="" class="sr-only peer toggle-status" data-campaign="KM-COMBO-LUNCH" type="checkbox">
+<div class="w-11 h-6 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container cursor-pointer accent-primary-container" type="checkbox">
+</td>
+<td class="py-4 px-4 font-mono font-bold text-primary-container text-[14px]">
+<span class="px-2 py-1 bg-surface-container rounded-md">#KM-WEEKEND-BOOST</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-lg text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Thứ 7 &amp; CN Cuồng Nhiệt - Giảm 20% Toàn Menu
+                  </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                    Áp dụng cho đơn hàng gia đình, tối thiểu 150.000đ
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+                  Giảm 20%
+                </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đồng tài trợ 50:50
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high flex items-center justify-center font-bold text-[11px] text-primary">A</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-tertiary-fixed flex items-center justify-center font-bold text-[11px] text-on-tertiary-fixed">H</div>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">98</span>
+<span class="font-body-sm text-body-sm text-secondary">MC</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">05/11/2025 - 28/11/2025</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timelapse</span> Còn 10 ngày
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đang chạy
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Xem chi tiết">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary transition-colors" title="Danh sách Merchant tham gia">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer ml-1">
+<input checked="" class="sr-only peer toggle-status" data-campaign="KM-WEEKEND-BOOST" type="checkbox">
+<div class="w-11 h-6 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container cursor-pointer accent-primary-container" type="checkbox">
+</td>
+<td class="py-4 px-4 font-mono font-bold text-primary-container text-[14px]">
+<span class="px-2 py-1 bg-surface-container rounded-md">#KM-NEWUSER-50K</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-lg text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Chào Bạn Mới - Tặng Voucher 50.000đ
+                  </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                    Khách hàng lần đầu đặt hàng qua nền tảng Giaodoan
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed-dim/40 text-on-surface font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">redeem</span>
+                  Giảm 50K
+                </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Giaodoan 100%
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high flex items-center justify-center font-bold text-[11px] text-primary">G</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-primary-fixed flex items-center justify-center font-bold text-[11px] text-on-primary-fixed">T</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-tertiary-fixed flex items-center justify-center font-bold text-[11px] text-on-tertiary-fixed">F</div>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">620</span>
+<span class="font-body-sm text-body-sm text-secondary">MC</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">01/01/2025 - 31/12/2025</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timelapse</span> Dài hạn
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-container font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đang chạy
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Xem chi tiết">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary transition-colors" title="Danh sách Merchant tham gia">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer ml-1">
+<input checked="" class="sr-only peer toggle-status" data-campaign="KM-NEWUSER-50K" type="checkbox">
+<div class="w-11 h-6 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+</tr>
+<!-- Row 6 (Sắp diễn ra) -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container cursor-pointer accent-primary-container" type="checkbox">
+</td>
+<td class="py-4 px-4 font-mono font-bold text-primary-container text-[14px]">
+<span class="px-2 py-1 bg-surface-container rounded-md">#KM-TEA-COFFEE</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-lg text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Tuần Lễ Trà Sữa &amp; Cà Phê - Đồng Tài Trợ 50%
+                  </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                    Kích cầu mùa lễ hội ẩm thực đồ uống đồ tráng miệng
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">coffee</span>
+                  Mua 1 Tặng 1
+                </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Đồng tài trợ 50:50
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-primary-fixed flex items-center justify-center font-bold text-[11px] text-on-primary-fixed">W</div>
+<div class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high flex items-center justify-center font-bold text-[11px] text-primary">T</div>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">56</span>
+<span class="font-body-sm text-body-sm text-secondary">MC</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">01/12/2025 - 08/12/2025</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Bắt đầu sau 12 ngày
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Sắp diễn ra
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Xem chi tiết">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary transition-colors" title="Danh sách Merchant tham gia">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</button>
+<label class="relative inline-flex items-center cursor-pointer ml-1">
+<input class="sr-only peer toggle-status" data-campaign="KM-TEA-COFFEE" type="checkbox">
+<div class="w-11 h-6 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- PAGINATION BAR -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-lg bg-surface-container-lowest border-t border-surface-container-low">
+<div class="flex items-center gap-space-md font-body-md text-body-md text-secondary">
+<span class="">Hiển thị <strong class="text-on-surface">1 - 6</strong> trên tổng số <strong class="text-on-surface">24</strong> CTKM đang chạy</span>
+<div class="h-4 w-[1px] bg-secondary-container"></div>
+<div class="flex items-center gap-2">
+<span class="">Hiển thị mỗi trang:</span>
+<select class="bg-surface-container-low text-on-surface rounded-md px-2 py-1 font-label-sm text-label-sm font-semibold outline-none cursor-pointer">
+<option value="6">6</option>
+<option value="12">12</option>
+<option value="24">24</option>
+<option value="50">50</option>
+</select>
+</div>
+</div>
+<!-- Numeric Pagination Controls -->
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<button class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span class="">Trước</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-bold shadow-sm" type="button">1</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface font-semibold transition-colors" type="button">2</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface font-semibold transition-colors" type="button">3</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface font-semibold transition-colors" type="button">4</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="">Tiếp theo</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- QUICK ANALYTICS & MERCHANT ENGAGEMENT BENCHMARK (Visual Richness Layer) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Box 1: Tỷ lệ phân bổ hình thức khuyến mãi -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-low">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Phân bổ Hình Thức Khuyến Mãi</h3>
+<span class="material-symbols-outlined text-secondary text-[20px]">donut_small</span>
+</div>
+<div class="py-space-md flex items-center gap-space-lg">
+<!-- Mini Donut Chart SVG -->
+<div class="relative w-28 h-28 shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4.5"></path>
+<!-- Giảm % (45%) -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="45, 100" stroke-width="4.5"></path>
+<!-- Freeship (35%) -->
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="35, 100" stroke-dashoffset="-45" stroke-width="4.5"></path>
+<!-- Combo / Other (20%) -->
+<path class="text-surface-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="20, 100" stroke-dashoffset="-80" stroke-width="4.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">38</span>
+<span class="font-label-sm text-[10px] text-secondary uppercase font-semibold">Chiến dịch</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 flex-1 font-label-md text-label-md">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-primary-container"></span>Giảm giá % theo đơn</span>
+<strong class="text-on-surface">45%</strong>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-tertiary"></span>Freeship giao nhanh</span>
+<strong class="text-on-surface">35%</strong>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-surface-dim"></span>Combo &amp; Giờ Vàng</span>
+<strong class="text-on-surface">20%</strong>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary bg-surface-container-low p-2.5 rounded-lg">
+          💡 <strong>Khuyến nghị AI CRM:</strong> Tăng ngân sách cho Freeship vào khung giờ trưa tại khu vực Quận 1 và Cầu Giấy để tăng 18% ROI.
+        </p>
+</div>
+<!-- Box 2: Tốc độ giải ngân ngân sách tài trợ -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-low">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Tốc Độ Phân Bổ Ngân Sách Quý 4</h3>
+<span class="material-symbols-outlined text-secondary text-[20px]">stacked_bar_chart</span>
+</div>
+<div class="py-space-md flex flex-col gap-3">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-secondary font-semibold">TP. Hồ Chí Minh (Hạn mức 220 Tr)</span>
+<span class="text-primary font-bold">176 Tr (80%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-secondary font-semibold">Hà Nội (Hạn mức 150 Tr)</span>
+<span class="text-tertiary font-bold">96 Tr (64%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-secondary font-semibold">Đà Nẵng &amp; Khu vực khác (Hạn mức 80 Tr)</span>
+<span class="text-on-surface font-bold">36.25 Tr (45%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 45%;"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-low font-label-sm text-label-sm">
+<span class="text-secondary">Chu kỳ tính toán: Q4/2025</span>
+<button class="text-primary hover:underline font-bold" type="button">Cập nhật hạn mức ngân sách →</button>
+</div>
+</div>
+<!-- Box 3: Top Merchant Đạt Tăng Trưởng CTKM Tốt Nhất -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-low">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Top Đối Tác Đạt Hiệu Quả Cao</h3>
+<span class="material-symbols-outlined text-primary-container text-[20px]">hotel_class</span>
+</div>
+<div class="divide-y divide-surface-container-low py-1">
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed text-[13px]">1</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface leading-snug">Whisper Coffee &amp; Tea</p>
+<p class="font-body-sm text-[11px] text-secondary">314 đơn CTKM • Tăng 46%</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary px-2 py-0.5 rounded bg-tertiary-fixed/30">+48.2 Tr</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-bold text-primary text-[13px]">2</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface leading-snug">Phở Trâu Tươi Bắc Ninh</p>
+<p class="font-body-sm text-[11px] text-secondary">280 đơn CTKM • Tăng 32%</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary px-2 py-0.5 rounded bg-tertiary-fixed/30">+39.5 Tr</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-secondary text-[13px]">3</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface leading-snug">Quán Hủ Tiếu Dai Đà Thành</p>
+<p class="font-body-sm text-[11px] text-secondary">215 đơn CTKM • Tăng 28%</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary px-2 py-0.5 rounded bg-tertiary-fixed/30">+31.0 Tr</span>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold transition-colors text-center" type="button">
+          Xem bảng xếp hạng 842 Merchant
+        </button>
+</div>
+</div>
+</div>
+<!-- SLIDE-OVER / MODAL: TẠO CTKM MỚI (Interactive) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 transition-opacity duration-300 opacity-0 pointer-events-none flex justify-end" id="create-modal-backdrop">
+<div class="w-full max-w-2xl bg-surface-container-lowest h-full shadow-2xl flex flex-col justify-between transform transition-transform duration-300 translate-x-full" id="create-modal-drawer">
+<!-- Drawer Header -->
+<div class="px-space-xl py-space-lg border-b border-surface-container flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Khởi Tạo Chiến Dịch CTKM Mới</h2>
+</div>
+<button class="p-2 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" id="btn-close-modal" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Drawer Form Body -->
+<div class="flex-1 overflow-y-auto p-space-xl flex flex-col gap-space-lg">
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Tên chương trình khuyến mãi *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-lg text-body-lg outline-none focus:ring-2 focus:ring-primary-container" placeholder="Ví dụ: Giáng Sinh Rộn Ràng - Giảm 40% Toàn Đơn" type="text">
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Mã chương trình (Hệ thống)</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container text-secondary font-mono text-[14px] font-bold cursor-not-allowed" readonly="" type="text" value="#KM-XMAS-2025">
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Hình thức ưu đãi *</label>
+<select class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold outline-none focus:ring-2 focus:ring-primary-container">
+<option>Giảm % theo đơn hàng</option>
+<option>Miễn phí giao hàng (Freeship)</option>
+<option>Combo đồng giá</option>
+<option>Voucher tiền mặt cố định</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Nguồn tài trợ *</label>
+<select class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold outline-none focus:ring-2 focus:ring-primary-container">
+<option>Giaodoan tài trợ 100%</option>
+<option>Đồng tài trợ 50:50</option>
+<option>Giaodoan 70% - MC 30%</option>
+<option>Merchant tự tài trợ 100%</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Ngân sách dự kiến (VNĐ)</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-lg text-body-lg outline-none focus:ring-2 focus:ring-primary-container" placeholder="50.000.000" type="number">
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Thời gian bắt đầu *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-lg text-body-lg outline-none focus:ring-2 focus:ring-primary-container" type="date" value="2025-12-01">
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Thời gian kết thúc *</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-lg text-body-lg outline-none focus:ring-2 focus:ring-primary-container" type="date" value="2025-12-25">
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Áp dụng cho Merchant nào?</label>
+<div class="flex flex-col gap-2 p-3 bg-surface-container-low rounded-xl">
+<label class="flex items-center gap-2 cursor-pointer font-label-md text-label-md text-on-surface">
+<input checked="" class="accent-primary-container" name="scope" type="radio">
+<span class="">Tất cả đối tác Merchant đủ điều kiện</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer font-label-md text-label-md text-on-surface">
+<input class="accent-primary-container" name="scope" type="radio">
+<span class="">Chỉ áp dụng nhóm Merchant F&amp;B trọng điểm (Top Tier)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer font-label-md text-label-md text-on-surface">
+<input class="accent-primary-container" name="scope" type="radio">
+<span class="">Chỉ định danh sách tải lên (Excel file)</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-bold text-on-surface mb-1">Ghi chú điều khoản &amp; điều kiện</label>
+<textarea class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-lg text-body-lg outline-none focus:ring-2 focus:ring-primary-container" placeholder="Điều khoản thanh toán, đối soát và trách nhiệm hủy đơn..." rows="3"></textarea>
+</div>
+</div>
+<!-- Drawer Footer Controls -->
+<div class="px-space-xl py-space-md border-t border-surface-container flex items-center justify-end gap-space-md bg-surface-container-low">
+<button class="px-space-lg py-2.5 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface font-label-lg text-label-lg font-semibold transition-colors" id="btn-cancel-modal" type="button">
+          Hủy bỏ
+        </button>
+<button class="px-space-xl py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all" id="btn-save-campaign" type="button">
+          Kích hoạt &amp; Phát hành CTKM
+        </button>
+</div>
+</div>
+</div>
+<!-- INLINE CLIENT MICRO-INTERACTIONS -->
+<script>
+    (function initCTKMInteractivity() {
+      // 1. Toast helper
+      const toast = document.getElementById('live-toast');
+      const toastText = document.getElementById('toast-text');
+      function showToast(msg) {
+        if (!toast || !toastText) return;
+        toastText.innerText = msg;
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+        }, 3200);
+      }
+
+      // 2. Toggle Status Switches
+      const toggles = document.querySelectorAll('.toggle-status');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('change', (e) => {
+          const campaignCode = e.target.getAttribute('data-campaign');
+          const isChecked = e.target.checked;
+          const statusMsg = isChecked ? 'Đã BẬT kích hoạt CTKM ' + campaignCode : 'Đã TẠM DỪNG áp dụng CTKM ' + campaignCode;
+          showToast(statusMsg);
+        });
+      });
+
+      // 3. Check All Behavior
+      const checkAll = document.getElementById('check-all');
+      const rowChecks = document.querySelectorAll('.row-checkbox');
+      if (checkAll) {
+        checkAll.addEventListener('change', (e) => {
+          rowChecks.forEach(cb => cb.checked = e.target.checked);
+          if (e.target.checked) {
+            showToast('Đã chọn tất cả ' + rowChecks.length + ' chương trình khuyến mãi');
+          }
+        });
+      }
+
+      // 4. Modal Drawer Actions
+      const openBtn = document.getElementById('btn-create-modal');
+      const closeBtn = document.getElementById('btn-close-modal');
+      const cancelBtn = document.getElementById('btn-cancel-modal');
+      const saveBtn = document.getElementById('btn-save-campaign');
+      const backdrop = document.getElementById('create-modal-backdrop');
+      const drawer = document.getElementById('create-modal-drawer');
+
+      function openDrawer() {
+        if (!backdrop || !drawer) return;
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+        drawer.classList.remove('translate-x-full');
+        drawer.classList.add('translate-x-0');
+      }
+
+      function closeDrawer() {
+        if (!backdrop || !drawer) return;
+        drawer.classList.remove('translate-x-0');
+        drawer.classList.add('translate-x-full');
+        setTimeout(() => {
+          backdrop.classList.remove('opacity-100');
+          backdrop.classList.add('opacity-0', 'pointer-events-none');
+        }, 200);
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeDrawer);
+      if (backdrop) {
+        backdrop.addEventListener('click', (e) => {
+          if (e.target === backdrop) closeDrawer();
+        });
+      }
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          closeDrawer();
+          showToast('Tạo mới và gửi thông báo CTKM #KM-XMAS-2025 tới Merchant thành công!');
+        });
+      }
+    })();
+  </script>
+</div></main></div>
+
+</body></html>

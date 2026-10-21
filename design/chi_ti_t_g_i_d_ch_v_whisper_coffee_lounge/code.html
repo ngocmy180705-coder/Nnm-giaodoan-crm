@@ -1,0 +1,542 @@
+<!DOCTYPE html><html lang="vi" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_dashboard" name="shell-type">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-container": "#ff5b00",
+            "surface-dim": "#cbdbf5",
+            "inverse-primary": "#ffb59a",
+            "background": "#f8f9fc",
+            "inverse-surface": "#19202e",
+            "on-secondary-fixed": "#181c23",
+            "on-tertiary-fixed-variant": "#005236",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#4edea3",
+            "surface-container-high": "#dce9ff",
+            "outline": "#907065",
+            "on-tertiary-container": "#003320",
+            "surface-bright": "#f8f9ff",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#eaf1ff",
+            "on-tertiary-fixed": "#002113",
+            "primary": "#a83900",
+            "tertiary": "#006c49",
+            "on-primary-fixed-variant": "#802a00",
+            "on-surface": "#0b1c30",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#6ffbbe",
+            "secondary-fixed": "#dfe2ec",
+            "error": "#ba1a1a",
+            "secondary-container": "#dfe2ec",
+            "secondary": "#5b5e67",
+            "on-secondary-fixed-variant": "#43474f",
+            "surface-container-low": "#eff4ff",
+            "outline-variant": "#e4beb1",
+            "surface-container-highest": "#d3e4fe",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#61646d",
+            "surface-container": "#e5eeff",
+            "primary-fixed-dim": "#ffb59a",
+            "surface": "#f8f9fc",
+            "on-surface-variant": "#5b4137",
+            "on-error-container": "#93000a",
+            "on-background": "#0b1c30",
+            "on-primary-container": "#521800",
+            "surface-tint": "#a83900",
+            "surface-variant": "#d3e4fe",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed-dim": "#c3c6d0",
+            "tertiary-container": "#00a773",
+            "on-primary-fixed": "#380d00",
+            "primary-fixed": "#ffdbce"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            "headline-xl": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Be Vietnam Pro"],
+            "body-md": ["Be Vietnam Pro"],
+            "body-sm": ["Be Vietnam Pro"],
+            "label-lg": ["Be Vietnam Pro"],
+            "label-md": ["Be Vietnam Pro"],
+            "label-sm": ["Be Vietnam Pro"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#19202e] font-body-lg text-[15px] leading-relaxed text-on-surface antialiased min-h-screen flex flex-row items-stretch">
+<!-- Full-height Left Sidebar matching Screen 4 and Screen 14 -->
+<aside class="w-64 bg-[#19202e] min-h-screen shrink-0 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)] self-stretch border-r border-slate-800">
+<div class="flex flex-col flex-1 min-h-0">
+<!-- Logo Header -->
+<div class="h-16 px-6 flex items-center gap-3 border-b border-[#2a3449]">
+<div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-white font-headline-md text-lg font-bold shadow-[0_4px_12px_rgba(255,91,0,0.35)] shrink-0">
+          G
+        </div>
+<div class="flex flex-col">
+<span class="font-headline-md text-lg font-bold tracking-tight text-white leading-tight">Giaodoan</span>
+<span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Merchant CRM</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 overflow-y-auto py-4 px-3">
+<div class="px-3 pb-2">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400/80">Quản lý Merchant</span>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" data-path="ho-so-merchant" href="#">
+<span class="material-symbols-outlined text-[22px]">store</span>
+<span class="text-[15px] font-medium">Hồ sơ Merchant</span>
+</a>
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" data-path="tien-do-onboard" href="#">
+<span class="material-symbols-outlined text-[22px]">timeline</span>
+<span class="text-[15px] font-medium">Tiến độ onboard</span>
+</a>
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" data-path="yeu-cau-ho-tro" href="#">
+<span class="material-symbols-outlined text-[22px]">headset_mic</span>
+<span class="text-[15px] font-medium">Yêu cầu hỗ trợ</span>
+</a>
+<!-- ACTIVE: Thời hạn & gia hạn -->
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg bg-primary-container text-white font-semibold shadow-[0_4px_12px_rgba(255,91,0,0.35)] transition-all" data-path="thoi-han-gia-han" href="#">
+<span class="material-symbols-outlined text-[22px] text-white">calendar_month</span>
+<span class="text-[15px] text-white font-semibold">Thời hạn &amp; gia hạn</span>
+</a>
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" data-path="lich-su-lien-he" href="#">
+<span class="material-symbols-outlined text-[22px]">contact_phone</span>
+<span class="text-[15px] font-medium">Lịch sử liên hệ</span>
+</a>
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" data-path="nguy-co-roi-bo" href="#">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+<span class="text-[15px] font-medium">Nguy cơ rời bỏ</span>
+</a>
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" data-path="faq" href="#">
+<span class="material-symbols-outlined text-[22px]">help</span>
+<span class="text-[15px] font-medium">FAQ</span>
+</a>
+<a class="group flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" data-path="ctkm" href="#">
+<span class="material-symbols-outlined text-[22px]">sell</span>
+<span class="text-[15px] font-medium">CTKM</span>
+</a>
+</nav>
+</div>
+</div>
+<!-- Bottom Actions -->
+<div class="p-3 border-t border-[#2a3449]">
+<nav class="flex flex-col gap-1">
+<a class="group flex items-center gap-3 px-3.5 py-2 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-[14px]">Cài đặt</span>
+</a>
+<a class="group flex items-center gap-3 px-3.5 py-2 rounded-lg text-slate-300 hover:bg-white/10 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">live_help</span>
+<span class="text-[14px]">Trợ giúp</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Main Content Wrapper -->
+<div class="flex-1 flex flex-col min-w-0 bg-[#f8f9fc]">
+<!-- Top Header Bar -->
+<header class="h-16 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-[0_1px_4px_rgba(0,0,0,0.03)] sticky top-0 z-40 flex items-center justify-between px-8 shrink-0">
+<div class="flex items-center gap-2 font-body-md text-[14px] text-slate-500">
+<span class="hover:text-primary transition-colors cursor-pointer">Tổng quan</span>
+<span class="material-symbols-outlined text-[16px] text-slate-400">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Thời hạn &amp; gia hạn</span>
+<span class="material-symbols-outlined text-[16px] text-slate-400">chevron_right</span>
+<span class="font-semibold text-primary px-2 py-0.5 rounded bg-primary-fixed text-[13px]">#GDV-GLD-02</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-[13px] font-semibold">
+<span class="material-symbols-outlined text-[16px] text-emerald-700">schedule</span>
+<span class="">GMT+7</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors cursor-pointer text-[13px] font-bold text-slate-800">
+<span class="text-[16px]">🇻🇳</span>
+<span class="">VIE</span>
+<span class="material-symbols-outlined text-[16px] text-slate-500">expand_more</span>
+</div>
+<button class="relative p-2 rounded-lg text-slate-500 hover:bg-slate-100 transition-colors" title="Thông báo" type="button">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-white"></span>
+</button>
+<div class="h-6 w-px bg-slate-200"></div>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-white shadow-sm ring-2 ring-primary/20 shrink-0">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div class="hidden md:flex flex-col text-left">
+<span class="text-[14px] text-slate-900 font-bold leading-tight">Nguyễn Văn A</span>
+<span class="text-[12px] text-slate-500 leading-tight">Quản lý Đối tác</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Workspace Body -->
+<main class="flex-1 p-8 flex flex-col gap-6">
+<!-- Top Action Strip & Page Title -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2 text-[13px] text-slate-500">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>
+<span class="">Tổng quan</span>
+</a>
+<span class="material-symbols-outlined text-[13px] text-slate-400">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Thời hạn &amp; gia hạn</a>
+<span class="material-symbols-outlined text-[13px] text-slate-400">chevron_right</span>
+<span class="font-semibold text-primary font-mono text-[13px]">#GDV-GLD-02</span>
+</div>
+<div class="flex flex-wrap items-center gap-3 mt-1">
+<h1 class="text-[28px] text-slate-900 font-bold tracking-tight leading-tight">
+              Chi Tiết Gói Dịch Vụ - Whisper Coffee &amp; Lounge
+            </h1>
+<span class="text-[13px] font-semibold text-slate-600 bg-slate-100 px-3 py-1 rounded-full">#MC-3926</span>
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[14px] font-bold border border-emerald-100">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="">Đang hiệu lực</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-50 text-amber-800 text-[14px] font-bold border border-amber-100">
+<span class="material-symbols-outlined text-[16px] text-primary-container">hourglass_bottom</span>
+<span class="">Còn 65 ngày</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-2.5 shrink-0">
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-slate-100 text-slate-700 font-semibold text-[14px] hover:bg-slate-200 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Quay lại</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-slate-100 text-slate-700 font-semibold text-[14px] hover:bg-slate-200 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span class="">Xuất hợp đồng / VAT</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 font-semibold text-[14px] transition-colors border border-blue-100" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span class="">Nhắc Zalo / SMS</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container text-white font-bold text-[14px] hover:bg-primary transition-all shadow-[0_4px_14px_rgba(255,91,0,0.3)]" type="button">
+<span class="material-symbols-outlined text-[20px]">autorenew</span>
+<span class="">Gia hạn gói ngay</span>
+</button>
+</div>
+</div>
+<!-- Merchant Info Card -->
+<div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 bg-primary-container/5 rounded-full pointer-events-none blur-2xl"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+<div class="flex items-start md:items-center gap-5">
+<div class="relative shrink-0">
+<img alt="Whisper Coffee &amp; Lounge" class="w-20 h-20 rounded-xl object-cover shadow-sm bg-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDThddEbldWqBo-o80arbO0jr4NG_0UsZ_ZE2ujhxXZxNyTUUab5PyRowXWmpzu6vKQp6LAenw-G7lbKT0u0jXtaRvOhS7aVOm1tz0HFrYGnMtzVyy1oCXirPP36s_hEVyShwk0Rp--krF31gbU6Whj-FN-5ubF-YIzKxAHeesNrmM6rUamwUC9Xz0k8V_4DNIei3I6yBNzfTWv-_q7xMYSUhBz02dvKiAgtts52Gp_Px4tmd2QWcRh">
+<span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2.5">
+<h2 class="text-[24px] font-bold text-slate-900 leading-tight">Whisper Coffee &amp; Lounge</h2>
+<span class="text-[12px] bg-amber-100 text-amber-900 font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-amber-600">verified</span>
+                  Đối tác Vàng F&amp;B
+                </span>
+<span class="text-[12px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded">#MC-3926</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2 mt-2.5 text-[14px] text-slate-600">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[17px] text-slate-400">storefront</span>
+<span class="">Cà phê &amp; Lounge cao cấp</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[17px] text-slate-400">call</span>
+<span class="font-semibold text-slate-900">+84 935 413 191</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[17px] text-slate-400">mail</span>
+<span class="">whispercoffee@gmail.com</span>
+</div>
+<div class="flex items-center gap-1.5 col-span-1 sm:col-span-2 md:col-span-3 text-slate-800 font-medium">
+<span class="material-symbols-outlined text-[17px] text-primary-container">location_on</span>
+<span class="">140/11 Hải Phòng, Phường Thạch Thang, Quận Hải Châu, TP. Đà Nẵng</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Account Manager Assignment Badge -->
+<div class="flex items-center gap-3.5 bg-slate-50 border border-slate-100 px-4 py-3 rounded-xl shrink-0 self-stretch lg:self-auto">
+<div class="w-11 h-11 rounded-full bg-primary-container text-white flex items-center justify-center font-bold text-base shadow-sm shrink-0">
+              VA
+            </div>
+<div class="flex flex-col">
+<span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Account Manager phụ trách</span>
+<span class="text-[15px] font-bold text-slate-900">Nguyễn Văn A</span>
+<span class="text-[12px] text-slate-500">Phòng Quản lý &amp; Phát triển Đối tác F&amp;B</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Current Subscription Card (Vàng / Gold Plan) -->
+<div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 flex flex-col gap-6">
+<!-- Header of Package Card -->
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-5 border-b border-slate-100 gap-4">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center text-white shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[36px]">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<span class="text-[26px] font-bold text-slate-900 tracking-tight">Gói Vàng (Gold Plan)</span>
+<span class="text-[13px] font-bold bg-primary-fixed text-primary px-3 py-1 rounded-full">Khuyên Dùng</span>
+</div>
+<span class="text-[15px] text-slate-500">
+                Mã hợp đồng điện tử: <strong class="text-slate-900 font-mono text-[16px]">#GDV-GLD-02</strong> • Chu kỳ thanh toán: <span class="font-bold text-slate-800">12 Tháng</span>
+</span>
+</div>
+</div>
+<div class="text-left md:text-right">
+<span class="text-[14px] font-semibold text-slate-500 block">Tổng chi phí gói 1 năm</span>
+<div class="flex items-baseline gap-3 md:justify-end mt-0.5">
+<span class="text-[34px] font-extrabold text-primary-container tracking-tight leading-none">10.800.000 đ</span>
+<span class="line-through text-slate-400 text-[18px] font-medium">11.988.000 đ</span>
+</div>
+</div>
+</div>
+<!-- Metrics Key-Value Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<div class="bg-slate-50 p-5 rounded-xl border border-slate-100 flex flex-col justify-between gap-2">
+<span class="text-[14px] font-medium text-slate-500">Đơn giá chuẩn niêm yết</span>
+<span class="text-[22px] text-slate-900 font-bold">900.000 đ / tháng</span>
+<span class="text-[13px] text-emerald-700 font-semibold flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[18px]">savings</span>
+              Tiết kiệm 10% thanh toán trọn năm (10.800.000 đ)
+            </span>
+</div>
+<div class="bg-slate-50 p-5 rounded-xl border border-slate-100 flex flex-col justify-between gap-2">
+<span class="text-[14px] font-medium text-slate-500">Hình thức thanh toán</span>
+<span class="text-[22px] text-slate-900 font-bold truncate">Chuyển khoản VCB</span>
+<span class="text-[13px] text-slate-500 font-mono font-medium mt-1">Mã GD: #VCB-8839210</span>
+</div>
+<div class="bg-slate-50 p-5 rounded-xl border border-slate-100 flex flex-col justify-between gap-2">
+<span class="text-[14px] font-medium text-slate-500">Thời hạn hiệu lực</span>
+<span class="text-[22px] text-slate-900 font-bold">01/01/2025 - 31/12/2025</span>
+<span class="text-[13px] text-primary font-bold mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+              Tổng thời gian: 365 ngày (Còn 65 ngày)
+            </span>
+</div>
+</div>
+<!-- Visual Lifespan & Timeline Gauge -->
+<div class="bg-slate-50/80 border border-slate-100 rounded-xl p-5 flex flex-col gap-3.5">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between text-[16px] gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[24px] text-primary-container">timelapse</span>
+<span class="text-slate-900 font-bold text-[18px]">Tiến độ thời gian sử dụng gói</span>
+</div>
+<div class="flex items-center gap-4 text-[15px]">
+<span class="text-slate-600">Đã dùng: <strong class="text-slate-900 text-[16px]">300 / 365 ngày (82%)</strong></span>
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="text-emerald-700 font-bold text-[16px]">Còn lại: 65 ngày</span>
+</div>
+</div>
+<div class="w-full h-4 rounded-full bg-slate-200 overflow-hidden relative">
+<div class="h-full bg-primary-container rounded-full transition-all duration-700" style="width: 82%;"></div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between text-[14px] text-slate-500 gap-2 pt-0.5">
+<span class="font-medium">Ngày kích hoạt: <strong class="text-slate-800">01/01/2025</strong></span>
+<span class="text-[13px] font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">Trạng thái ổn định • Chưa chạm ngưỡng cảnh báo (&lt;15 ngày)</span>
+<span class="font-medium">Ngày hết hạn: <strong class="text-slate-800">31/12/2025</strong></span>
+</div>
+</div>
+<!-- Entitlements & Features Grid -->
+<div class="flex flex-col gap-4 pt-2">
+<span class="text-[20px] text-slate-900 font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px] text-primary-container">stars</span>
+            Quyền lợi độc quyền Gói Vàng đang kích hoạt:
+          </span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:bg-slate-100/70 transition-colors">
+<span class="material-symbols-outlined text-[26px] text-emerald-600 shrink-0 mt-0.5">rocket_launch</span>
+<div class="flex flex-col gap-1">
+<span class="text-[17px] font-bold text-slate-900">Ưu tiên đẩy Top tìm kiếm</span>
+<span class="text-[15px] text-slate-600 leading-relaxed">Tối ưu bán kính 5km trên app thực khách Giaodoan, gia tăng 35% lượt tiếp cận và đặt bàn.</span>
+</div>
+</div>
+<div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:bg-slate-100/70 transition-colors">
+<span class="material-symbols-outlined text-[26px] text-emerald-600 shrink-0 mt-0.5">percent</span>
+<div class="flex flex-col gap-1">
+<span class="text-[17px] font-bold text-slate-900">Chiết khấu hoa hồng ưu đãi 12%</span>
+<span class="text-[15px] text-slate-600 leading-relaxed">Tiết kiệm 3% so với mức tiêu chuẩn 15% cho từng đơn hàng hoàn tất qua ứng dụng.</span>
+</div>
+</div>
+<div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:bg-slate-100/70 transition-colors">
+<span class="material-symbols-outlined text-[26px] text-emerald-600 shrink-0 mt-0.5">campaign</span>
+<div class="flex flex-col gap-1">
+<span class="text-[17px] font-bold text-slate-900">Đồng hành Marketing &amp; Banner</span>
+<span class="text-[15px] text-slate-600 leading-relaxed">Slot xuất hiện miễn phí trong 02 chiến dịch Flash Sale thương hiệu và lễ hội ẩm thực mỗi quý.</span>
+</div>
+</div>
+<div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:bg-slate-100/70 transition-colors">
+<span class="material-symbols-outlined text-[26px] text-emerald-600 shrink-0 mt-0.5">support_agent</span>
+<div class="flex flex-col gap-1">
+<span class="text-[17px] font-bold text-slate-900">Kênh hỗ trợ VIP SLA &lt; 2 Giờ</span>
+<span class="text-[15px] text-slate-600 leading-relaxed">Đường dây nóng xử lý sự cố thiết bị POS, cập nhật thực đơn và vận hành ưu tiên 24/7.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Transaction & Renewal History Table -->
+<div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
+<div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 border-b border-slate-200">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[26px] text-primary-container">history</span>
+<h3 class="text-[20px] font-bold text-slate-900">Bảng Lịch Sử Gia Hạn Dịch Vụ</h3>
+</div>
+<span class="text-[15px] text-slate-500 font-medium">Tổng cộng: <strong class="text-slate-900 text-[16px]">03 lần đăng ký / gia hạn</strong></span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary-container text-white font-bold text-[15px]">
+<th class="py-4 px-5">Mã HĐ</th>
+<th class="py-4 px-5">Gói Dịch Vụ</th>
+<th class="py-4 px-5">Chu Kỳ</th>
+<th class="py-4 px-5">Ngày Ký</th>
+<th class="py-4 px-5">Thời Hạn Hiệu Lực</th>
+<th class="py-4 px-5 text-right">Giá Trị Thanh Toán</th>
+<th class="py-4 px-5 text-center">Trạng Thái</th>
+<th class="py-4 px-5 text-center">Thao Tác (Hóa Đơn / VAT)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 text-[15px] text-slate-800">
+<!-- Row 1: Current Gold Plan -->
+<tr class="hover:bg-amber-50/40 transition-colors">
+<td class="py-4 px-5 font-mono font-bold text-primary text-[16px]">#GDV-GLD-02</td>
+<td class="py-4 px-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+<span class="font-bold text-[16px] text-slate-900">Gói Vàng (Gold)</span>
+</div>
+</td>
+<td class="py-4 px-5 font-semibold">12 Tháng</td>
+<td class="py-4 px-5 font-mono text-slate-500">25/12/2024</td>
+<td class="py-4 px-5 font-mono font-medium text-slate-900">01/01/2025 - 31/12/2025</td>
+<td class="py-4 px-5 font-mono font-bold text-right text-slate-900 text-[17px]">10.800.000 đ</td>
+<td class="py-4 px-5 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[14px] font-bold bg-emerald-100 text-emerald-800">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                    Đang hiệu lực
+                  </span>
+</td>
+<td class="py-4 px-5 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg text-slate-500 hover:text-primary hover:bg-slate-100 transition-colors" title="Xem hợp đồng" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg text-slate-500 hover:text-primary hover:bg-slate-100 transition-colors" title="Tải hóa đơn VAT điện tử" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Silver Plan -->
+<tr class="hover:bg-slate-50 transition-colors">
+<td class="py-4 px-5 font-mono font-medium text-slate-500 text-[16px]">#GDV-SLV-01</td>
+<td class="py-4 px-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+<span class="font-medium text-[16px] text-slate-800">Gói Bạc (Silver)</span>
+</div>
+</td>
+<td class="py-4 px-5">06 Tháng</td>
+<td class="py-4 px-5 font-mono text-slate-500">15/06/2024</td>
+<td class="py-4 px-5 font-mono font-medium text-slate-600">01/07/2024 - 31/12/2024</td>
+<td class="py-4 px-5 font-mono font-bold text-right text-slate-900 text-[17px]">2.700.000 đ</td>
+<td class="py-4 px-5 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[14px] font-medium bg-slate-100 text-slate-700">
+                    Đã hoàn thành
+                  </span>
+</td>
+<td class="py-4 px-5 text-center">
+<div class="flex items-center justify-center gap-2">
+<button class="p-2 rounded-lg text-slate-500 hover:text-primary hover:bg-slate-100 transition-colors" title="Xem hợp đồng" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg text-slate-500 hover:text-primary hover:bg-slate-100 transition-colors" title="Tải hóa đơn VAT điện tử" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Trial Plan -->
+<tr class="hover:bg-slate-50 transition-colors">
+<td class="py-4 px-5 font-mono font-medium text-slate-500 text-[16px]">#GDV-TRI-00</td>
+<td class="py-4 px-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
+<span class="font-medium text-[16px] text-slate-800">Dùng Thử Khai Trương</span>
+</div>
+</td>
+<td class="py-4 px-5">15 Ngày</td>
+<td class="py-4 px-5 font-mono text-slate-500">01/06/2024</td>
+<td class="py-4 px-5 font-mono font-medium text-slate-600">15/06/2024 - 30/06/2024</td>
+<td class="py-4 px-5 font-mono font-bold text-right text-emerald-700 text-[17px]">Miễn phí (0 đ)</td>
+<td class="py-4 px-5 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[14px] font-medium bg-slate-100 text-slate-700">
+                    Đã hoàn thành
+                  </span>
+</td>
+<td class="py-4 px-5 text-center">
+<button class="p-2 rounded-lg text-slate-500 hover:text-primary hover:bg-slate-100 transition-colors" title="Xem ghi nhận" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-[14px] text-slate-500 gap-2">
+<span class="">Dữ liệu hóa đơn điện tử GTGT kết nối trực tiếp cơ quan thuế qua hệ thống Giaodoan e-Invoice</span>
+<a class="text-primary font-bold text-[14px] hover:underline flex items-center gap-1.5" href="#">
+<span class="">Tra cứu cổng hóa đơn điện tử</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</main>
+</div>
+
+
+</body></html>

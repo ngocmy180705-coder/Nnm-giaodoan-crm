@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Page gutter used by every `px-margin` / `p-margin` / `left-margin`: 1rem on phones, 1.5rem from sm. */
+:root {
+  --page-margin: 1rem;
+}
+@media (min-width: 640px) {
+  :root {
+    --page-margin: 1.5rem;
+  }
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-surface font-body-lg text-[15px] leading-relaxed text-on-surface antialiased;
+    overscroll-behavior: none;
+  }
+}
+
+/* Material Symbols: the Google Fonts stylesheet defines the glyph class; this only fixes the default axes. */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-outlined.filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Settings > "Mật độ bảng gọn": tighter rows in every table. */
+html[data-density='compact'] table :is(td, th) {
+  padding-top: 0.375rem !important;
+  padding-bottom: 0.375rem !important;
+}
