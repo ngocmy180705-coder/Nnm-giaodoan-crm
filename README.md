@@ -33,7 +33,7 @@
 | 🏷️ CTKM | https://giaodoan-crm.giaodoan-merchant-crm.workers.dev/promotions |
 | ⚙️ Cài đặt | https://giaodoan-crm.giaodoan-merchant-crm.workers.dev/settings |
 | 💡 Trợ giúp | https://giaodoan-crm.giaodoan-merchant-crm.workers.dev/help |
-| 💻 Mã nguồn | https://github.com/ngocmy180705-coder/Nnm-giaodoan-crm *(riêng tư)* |
+| 💻 Mã nguồn | https://github.com/ngocmy180705-coder/Nnm-giaodoan-crm |
 
 > 💡 Không cần đăng nhập, mở link là dùng được ngay. Dữ liệu mẫu đã có sẵn (Whisper Coffee & Lounge, Ancora Cocktail Bar, Phở Bát Đàn…).
 
